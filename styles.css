@@ -61,7 +61,7 @@ nav{
     /* color:#fff ; */
 }
 .menu{
-    /* margin-right: -10em; */
+    /* margin-right: -5em; */
     display: flex;
     justify-content: center;
     width: fit-content;
@@ -175,6 +175,8 @@ nav{
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+    width: fit-content;
+    align-self: center;
 }
 
 .Reg:hover{
@@ -422,21 +424,18 @@ color: #fff;
          display: flex;
          flex-direction: column;
          justify-content: center;
-         /* align-items: start; */
-         /* font-family: 'Lumanosimo', cursive; */
          gap: 0.5em;
          
     }
     .heroLeft h2{
         font-family: serif;
-        font-size: 30px;
+        font-size: 25px;
     }
     .heroLeft h1{
         font-family: serif;
         text-transform: uppercase;
         font-size: 40px;
         font-weight: bold;
-        
     }
     nav  .Reg{
         display: none;
@@ -448,20 +447,23 @@ color: #fff;
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: #fff;
-        border: 5px solid rgb(145,1,0);
-        color:rgb(208,67,37);
+        color:#FFF ;
+        background: rgb(208,67,37);
+        border: 5px solid #fff;
         padding: 8px 12px;
         border-radius: 15px;
         text-decoration: none;
         font-size: 20px;
         font-weight: bold;
+        width: fit-content;
+        align-self: center;
+
     }
     
     .Reg:hover{
-        color:#FFF ;
-        background: rgb(208,67,37);
-        border: 5px solid #fff;
+        background: #fff;
+        color:rgb(208,67,37);
+        border: 5px solid rgb(145,1,0);
         font-size: 21px;
     }
     .arrowIcon{
@@ -1032,6 +1034,7 @@ align-items: center;
             height: fit-content;
             display: flex;
             flex-direction: column;
+            gap: 1em;
         }
         .top{
             width: 100%;
@@ -1044,6 +1047,7 @@ align-items: center;
         .aboutTextLeftRight{
             display: flex;
             flex-direction: column;
+            gap: 1em;
         }
         .aboutTextLeft{
             width: 100%;
@@ -1443,7 +1447,8 @@ gap: 3em;
         height: fit-content;
         width: 100%;
         background: rgb(15,0,0);
-        color: rgb(208,67,37);
+        /* color: rgb(208,67,37); */
+        color: #fff;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1572,7 +1577,36 @@ gap: 3em;
         font-size: 18px;
     }
 
+    .features{
 
+    }
+    .features h3{
+        
+        
+    }
+    .details{
+        /* display: flex;
+        flex-direction: column;
+       justify-content: left;
+       text-align: left;
+       align-items: start; */
+
+
+    }
+    .details h3{
+        
+    }
+    .outro{
+
+    }
+    .outro h3{
+        
+    }
+
+    /* MOBILE RESP AGENDA  */
+    @media only screen and (min-width: 650px){
+
+    }
 
     /* SPONSOR DESKTOP */
     @media only screen and (min-width:1198px){
