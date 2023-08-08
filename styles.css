@@ -9,6 +9,7 @@
 /* DESKTOP RES from 930px upwards  */
 @media screen and (min-width:930px){
 .header{
+   
     display: flex;
 height: 100vh;
 width: 100%;
@@ -17,20 +18,6 @@ background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('./image
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-
-/* background: linear-gradient(rgba(145, 245, 252, 0.5),  rgba(15, 252, 222, 0.5)), url('./images/ladies2.jpg'); */
-/* linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-url('images/background.jpg'); */
-/* background: linear-gradient(rgb(145,1,0), rgb(15,0,0)  ); */
-/* background: rgb(208,67,37); */
-
-
-/* align-items: center; */
-
-/* border: 2px solid red; */
-/* background: linear-gradient(rgba(238, 3, 3, 0.5), rgba(255, 13, 13, 0.5)); */
-/* rgb(145,1,0) */
-/* rgb(15,0,0) */
 }
 .headerContent{
     display: flex;
@@ -43,25 +30,21 @@ url('images/background.jpg'); */
 
 }
 nav{
-    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 0 5%;
     height: 12vh;
-    /* background-color: #130101; */
     background-color: #ffffff;
 }
 .logo{
     width: 80px;
-    /* display: flex; */
-    /* font-size: 25px; */
-    /* font-weight: bold; */
-    /* color:#fff ; */
 }
 .menu{
-    /* margin-right: -5em; */
     display: flex;
     justify-content: center;
     width: fit-content;
@@ -91,13 +74,11 @@ nav{
 }
 
 .socials{
- /* border: 2px solid ; */
  display: flex;
  justify-content: center;
  align-items: center;
  width: fit-content;
  gap: 1em;
- /* margin-right: -10em; */
 }
 .socials ion-icon{
     color: rgb(243, 142, 119);
@@ -114,7 +95,7 @@ nav{
     display: none;
 }
 .hero{
-    /* border: 2px solid #fff; */
+    margin-top: 12vh;
     width: 90%;
     height: 73vh;
     display: flex;
@@ -300,15 +281,17 @@ nav{
     
     }
     nav{
-        /* position: fixed; */
+        position: fixed;
+        top: 0;
+        z-index: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
         padding: 0 5%;
         height: 10vh;
-        /* background-color: #130101; */
-        background-color: #ffffff;
+        background-color: #fff;
+        border-bottom: 0.1px solid rgb(219, 147, 131);
     }
     .logo{
         width: 60px;
@@ -349,11 +332,9 @@ nav{
     right: 0;
     width: 90%;
    height: 100vh;
-    background-color: rgb(44, 16, 9);    
-    /* background-color: red; */
+    background-color: rgb(95, 27, 10);
     display: flex;
     flex-direction: column;
-   
     transition: all 0.3s linear;
     transform: translate(100%);
     overflow: scroll;
@@ -368,7 +349,6 @@ nav{
 }
 
 .side-menu{
-    /* border: 2px solid red; */
     width: 100%;
     height: 70vh;
     display: flex;
@@ -389,15 +369,20 @@ list-style: none;
 text-decoration: none;
 color: #fff;
 }
-.side-menu-items a:hover{
+.side-menu a:hover{
     font-size: 27px;
-    }
+    border-bottom: 1px solid #fff;
+}
+.side-menu a{
+    text-decoration: none;
+}
 
 
 
 
     .hero{
-        /* border: 2px solid #fff; */
+        /* added 10vh marging-top bcos of fixed nav bar  */
+        margin-top: 10vh;
         width: 90%;
         height: 73vh;
         display: flex;
@@ -406,20 +391,11 @@ color: #fff;
         align-items: center;
     
     }
-    /* .heroLeftRight{
-        width: 80%;
-        height:100% ;
-        display: flex;
-    
-    } */
     
     .heroLeft{
-        /* border: 2px solid #a1d809; */
         margin-top: 3em;
         height: 100%;
-        /* width: 50%; */
         width: 100%;
-       
          color: #fff;
          display: flex;
          flex-direction: column;
@@ -473,7 +449,6 @@ color: #fff;
        width: 50px;
     }
     .heroRight{
-        /* border: 2px solid #100dcc; */
         width: 50%;
         height: 100%;
         display: flex;
@@ -490,7 +465,6 @@ color: #fff;
         transform: scaleX(-1);
     }
     .headerBottom{
-        /* border: 2px solid #63d616; */
         background: rgb(14, 1, 1);
         display: flex;
         height: 17vh;
@@ -500,8 +474,6 @@ color: #fff;
     
     /* countdown timer  */
     .countdown-timer {
-        /* border: 2px solid red; */
-        /* max-width: 500px; */
         width: 100%;
         height: 100%;
         display: flex;
@@ -509,10 +481,7 @@ color: #fff;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        /* padding: 20px; */
         color: #fff;
-        /* gap: 2em; */
-        
     }
     .countdownIntro{
         display: flex;
@@ -527,7 +496,6 @@ color: #fff;
         font-size: 25px;
     }
     #countdown {
-        /* border: 1px solid red; */
         display: flex;
         width: 100%;
         height: fit-content;
@@ -547,7 +515,6 @@ color: #fff;
     }
     #countdown span {
         display: block;
-        /* font-size: 48px; */
         font-size: 25px;
     }
     
@@ -560,7 +527,6 @@ color: #fff;
 @media only screen and (min-width:655px) and (max-width:930px){
     .header{
         display: flex;
-    /* min-height: 100vh; */
     height: fit-content;
     width: 100%;
     justify-content: center;
@@ -568,8 +534,6 @@ color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
     }
     .headerContent{
         display: flex;
@@ -583,6 +547,9 @@ color: #fff;
     }
     nav{
         /* position: fixed; */
+        position: fixed;
+        top: 0;
+        z-index: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -677,7 +644,7 @@ color: #fff;
 
 
     .hero{
-        /* border: 2px solid #fff; */
+       margin-top: 10vh;
         width: 90%;
         min-height: 73vh;
         display: flex;
@@ -686,26 +653,15 @@ color: #fff;
         align-items: center;
     
     }
-    /* .heroLeftRight{
-        width: 80%;
-        height:100% ;
-        display: flex;
-    
-    } */
-    
+
     .heroLeft{
-        /* border: 2px solid #a1d809; */
-        /* margin-top: 3em; */
-        height: 100%;
-        /* width: 50%; */
-        width: 100%;
        
+        height: 100%;
+        width: 100%;
          color: #fff;
          display: flex;
          flex-direction: column;
          justify-content: center;
-         /* align-items: start; */
-         /* font-family: 'Lumanosimo', cursive; */
          gap: 0.5em;
          
     }
@@ -753,40 +709,31 @@ color: #fff;
        width: 50px;
     }
     .heroRight{
-        /* border: 2px solid #100dcc; */
         width: 50%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-    
-    
     }
     .heroRight img{
         width: 500px;
         height: 550px;
         border-radius: 30%;
-        /* -webkit-transform: scaleX(-1); */
         transform: scaleX(-1);
     }
 
     .headerBottom{
-        /* border: 2px solid #63d616; */
         background: rgb(14, 1, 1);
         display: flex;
         height: 15vh;
         width: 100%;
-    
     }
     
     /* countdown timer  */
     .countdown-timer {
-        /* border: 2px solid red; */
-        /* max-width: 500px; */
         width: fit-content;
         height: 100%;
         display: flex;
-        /* justify-content: center; */
         align-items: center;
         margin: 0 auto;
         padding: 20px;
@@ -808,8 +755,6 @@ color: #fff;
     
     #countdown {
         display: flex;
-        /* justify-content: space-between; */
-        /* margin-top: 20px; */
     }
     
     #countdown div {
@@ -825,7 +770,6 @@ color: #fff;
     }
     #countdown span {
         display: block;
-        /* font-size: 48px; */
         font-size: 25px;
     }
     
@@ -834,10 +778,21 @@ color: #fff;
     }
 }
 
-
-
-
-
+/* hero text for width 768 to 930  */
+@media only screen and (min-width:768px) and (max-width:830px){
+    .heroLeft h2{
+        font-family: serif;
+        font-size: 50px;
+        
+    }
+    .heroLeft h1{
+        font-family: serif;
+        text-transform: uppercase;
+        font-size: 70px;
+        font-weight: bold;
+        
+    }
+}
 
 
 
@@ -846,13 +801,11 @@ color: #fff;
 @media screen and (min-width:930px){
     .about{
 width: 100%;
-/* height: 150vh; */
 height: fit-content;
 background-color: #fff;
 display: flex;
 justify-content: center;
 align-items: center;
-
 }
 .aboutContent{
     width: 90%;
@@ -862,10 +815,8 @@ align-items: center;
     align-items: center;
     justify-content: ;
     padding: 2em 0;
-    /* border: 2px solid red; */
 }
 .aboutIntroImg{
-    /* border: 2px solid rgb(1, 24, 9); */
     display: flex;
     justify-content: center;
     width: 85%;
@@ -873,8 +824,6 @@ align-items: center;
     position: absolute;
     left: 0;
     top: inherit;
-    /* background: url(./images/ladies1.jpg); */
-    /* background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/ladies1.jpg); */
     background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/spill3.jpg);
     background-position: left;
     background-size: cover;
@@ -894,25 +843,17 @@ align-items: center;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    /* gap: 2em; */
-    /* border: 2px solid red; */
 }
 .top{
-    /* border: 2px solid red; */
     width: 100%;
-
 }
 .top p{
     font-size: 18px;
     text-align: justify;
-
 }
 .aboutTextLeftRight{
-    /* border: 2px solid rgb(8, 216, 95); */
     display: flex;
     flex-direction: column;
-    /* gap: 1em; */
-
 }
 .aboutTextLeft{
     width: 100%;
@@ -933,9 +874,7 @@ align-items: center;
     margin-top: 1em;
     width: 100%;
     height: fit-content;
-      /* border: 2px solid rgb(12, 5, 5); */
       display: flex;
-      /* justify-content: right; */
       align-items: flex-start;
       text-align: justify;
 }
@@ -945,33 +884,24 @@ align-items: center;
     justify-content: center;
     align-items: center;
     height: fit-content;
-    /* gap: 1em; */
-      /* border: 2px solid rgb(233, 229, 5); */
 }
 .aboutOutroLeft{
-  /* border: 2px solid rgb(2, 1, 17); */
   height: fit-content;
   width: fit-content;
-  /* width: 100%; */
-  /* min-height:450px ; */
   padding: 2%;
-  /* margin-top: 2em; */
   font-size: 20px;
   text-align: justify;
   background-color: rgb(121, 42, 24);
   color: #fff;
 }
 .aboutOutroRight{
- /* position: absolute; */
   height: 300px;
   width:350px;
-  /* width: 450px; */
   background: url(./images/spill1.jpg);
   border-radius: 0 0 50% 0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* border: 2px solid; */
   border: none;
 }
 .aboutOutroRight h2{
@@ -981,8 +911,8 @@ align-items: center;
     font-size: 23px;
     font-weight: bold;
 }
-}
 
+}
 
 
 /* MOBILE RESP FOR ABOUT SECTION  */
@@ -1773,6 +1703,10 @@ gap: 3em;
         color: rgb(208,67,37);
         font-size: 23px;
     }
+    .footerSocials{
+        display: none;
+    }
+       
 
 /* FOOTER MOBILE  */
     @media only screen and (max-width:650px){
@@ -1830,4 +1764,20 @@ gap: 3em;
                 color: rgb(208,67,37);
                 font-size: 23px;
             }
+
+            .footerSocials{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: fit-content;
+                gap: 1em;
+               }
+               .footerSocials ion-icon{
+                   color: rgb(233, 74, 39);
+                   font-size: 20px;
+               }
+               .footerSocials ion-icon:hover{
+                   color: rgb(204, 156, 145);
+                   font-size: 21px;
+               }
     }

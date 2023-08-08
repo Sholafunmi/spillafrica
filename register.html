@@ -10,9 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,600&display=swap" rel="stylesheet"> -->
+
 </head>
 <body>
    <section id="reg">
@@ -21,7 +19,7 @@
     <p>Register Here</p>
     </div>
    
-    <form id="registrationForm" method="post" action="">
+    <!-- <form id="form" method="post" action="">
         <label for="name">Fullname:</label>
         <input type="text" id="name" required><br>
         
@@ -29,73 +27,131 @@
         <input type="text" id="occupation" required><br>
 
         <label for="tel"> Phone No:</label>
-        <input type="tel" id="tel" required> <br>
+        <input type="tel" id="tel name= " required> <br>
 
 
         <label for="email">Email:</label>
-        <input type="email" id="email" required><br>
+        <input type="email" id="email" name="email" required><br>
 
         <div class="attendees">
             <div class="firstTime">
-                 <label for="firstTimer">First Time Attender</label>
-                 <input type="checkbox" name="First Timer" id="firstTimer">
+                 <label for="firstTimer">First Time Attendee</label>
+                 <input type="checkbox" name="FirstTimer" id="firstTimer">
             </div>
 
             <div class="repeatAttendee">
-                <label for="repeatAttender">Repeat Attender </label>
-                 <input type="checkbox" name="Repeat Attender" id="repeatAttender">
+                <label for="repeatAttender">Repeat Attendee </label>
+                 <input type="checkbox" name="RepeatAttender" id="repeatAttender">
             </div>
         </div>
-        <button type="submit">Submit</button>
-    </form>
+        <button id="submit" type="submit">Submit</button>
+    </form> -->
+
+<!-- 
+    <form class="mb-4 flex flex-wrap justify-between" id="form">
+  
+       
+        <div class="flex flex-col w-full mb-4">
+          <label class="field-label" for="email">Name</label>
+          <input class="bg-green-100 px-2 py-1 outline-none" type="text" name="Name" id="email">
+        </div>
+        <div class="flex flex-col w-full mb-4">
+          <label class="field-label" for="password">Message</label>
+          <textarea class="bg-green-100 px-2 py-1 outline-none" type="text" name="Message" id="Message"></textarea>
+        </div>
+
+
+        <input type="date" name="Time" id="">
+        <input type="checkbox" name="Check" value="true" id="">
+        <button class="bg-orange-300 px-3 py-1 text-white mx-auto" type="submit" id="submit">Submit</button>
+      </form>
+
+
+
 </section>
 
+
 <script>
-     const form = document.getElementById('registrationForm');
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbwyDzGJ_oByPM-fdyegtjAnFwO4mlpYbyqzzpwxqWChSo546tJjzrpjMnmr0hNcGr3_gQ/exec'
+    const form = document.querySelector('#form')
+    const btn = document.querySelector('#submit')
 
-form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent default form submission
 
-    // Get form data
-    const name = document.getElementById('name').value;
-    const occupation = document.getElementById('occupation').value;
-    const tel = document.getElementById('tel').value;
-    const email = document.getElementById('email').value;
-    const firstTimer = document.getElementById('FirstTimer').value;
-    const repeatAttender = document.getElementById('RepeatAttender').value;
-    
-    
-    // Add more form data as needed
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      btn.disabled = true
+      btn.innerHTML = "Loading..."
 
-    // Send the data to the Google Sheet using Google Sheets API
-    const formData = {
-        'Name': name,
-        'Occupation':occupation,
-        'Tel':tel,
-        'Email': email,
-        'First-Time-Attender':firstTimer,
-        'Repeat-Attender':repeatAttender
-        // Add more data keys here matching your Google Sheet column names
-    };
-   
-   
-    fetch(' https://script.google.com/macros/s/AKfycby6KFE6tCY9_Y4Z8AKuHgjdFYa8X9HRE07GbUf-io9QyNXV_7qwkabt2Fk5fATGCTzolA/exec', {
-        method: 'POST',
-        mode: 'no-cors',
-        cache: 'no-cache',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: new URLSearchParams(formData).toString()
-    })
-        .then(response => {
-            console.log('Form data sent successfully.');
-        })
+      console.log(form)
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => { 
+              btn.disabled = false
+      btn.innerHTML = "Submit"
+            alert('Success!', response) })
         .catch(error => {
-            console.error('Error sending form data:', error);
-        });
-});
+                     btn.disabled = false
+      btn.innerHTML = "Submit"
+            alert('Error!', error.message)})
+    })
+ </script> -->
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form id="registration-form">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  
+  <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<script>
+    function submitForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var username = document.getElementById("username").value;
+
+  var formData = {
+    name: name,
+    email: email,
+    username: username
+  };
+
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbwyDzGJ_oByPM-fdyegtjAnFwO4mlpYbyqzzpwxqWChSo546tJjzrpjMnmr0hNcGr3_gQ/exec",
+    method: "POST",
+    data: formData,
+    dataType: "json",
+    success: function(response) {
+      alert("Registration successful!");
+    },
+    error: function() {
+      alert("An error occurred. Please try again later.");
+    }
+  });
+}
+
 </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
 
 </body>
 </html>
