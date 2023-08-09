@@ -48,9 +48,3 @@ setInterval(updateCountdown, 1000);
 // Initial update when the page loads
 updateCountdown();
 
-
-
-
-
-// REG FORM 
-       
