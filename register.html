@@ -49,9 +49,6 @@
 
 
 
-
-
-
     <!-- <form name="submit-to-google-sheet">
       <input name="email" type="email" placeholder="Email" required>
       <input name="email" type="email" placeholder="Email" required>
@@ -71,10 +68,17 @@
       form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
+          .then(response => {
+            // Handle success
+            console.log("Form data sent successfully!");
+            form.reset();
+            window.location.href = "formsubmit.html"; // Redirect to success page
+        }).catch(error => {
+            console.error("Error sending form data:", error);
+        });
       })
     </script>
+
   
 
 </body>
