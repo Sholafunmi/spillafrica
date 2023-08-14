@@ -359,6 +359,8 @@ nav{
     align-items: center;
 }
 .side-menu-items{
+    font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
 color: #fff;
 font-size: 25px;
 list-style: none;
@@ -394,6 +396,8 @@ color: #fff;
     }
     
     .heroLeft{
+        font-family: 'Rajdhani', sans-serif;
+            /* font-weight: 500; */
         margin-top: 3em;
         height: 100%;
         width: 100%;
@@ -405,11 +409,13 @@ color: #fff;
          
     }
     .heroLeft h2{
-        font-family: serif;
+        /* font-family: serif; */
         font-size: 25px;
     }
     .heroLeft h1{
-        font-family: serif;
+        /* font-family: serif; */
+        font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
         text-transform: uppercase;
         font-size: 40px;
         font-weight: bold;
@@ -418,7 +424,9 @@ color: #fff;
         display: none;
     }
     .Reg{
-        font-family: serif;
+        font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+        /* font-family: serif; */
         display: flex;
         gap: .3em;
         justify-content: center;
@@ -475,6 +483,8 @@ color: #fff;
     
     /* countdown timer  */
     .countdown-timer {
+        font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
         width: 100%;
         height: 100%;
         display: flex;
@@ -957,50 +967,75 @@ align-items: center;
             color: #fff;
             font-size: 40px;
             font-weight: bold;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
         }
         
         .aboutText{
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
             margin-top: 17vh;
-            width: 100%;
+            width: 95%;
             height: fit-content;
             display: flex;
             flex-direction: column;
             gap: 1em;
+            font-size: 18px;
+            /* color: #54595F; */
+            /* color: rgb(54, 52, 52); */
+            /* font-weight: bold; */
+             /* padding: 3%; */
+            /* border: 2px solid #792a18; */
+           
+            text-align: center;
+        }
+        .borderline{
+             border: 2px solid #792a18;
+             width: 100%; 
+             padding: 4%;
         }
         .top{
             width: 100%;
+             padding: 3%;
+
         }
         .top p{
-            font-size: 18px;
-            text-align: justify;
-        
+            /* font-size: 18px; */
+            /* text-align: justify; */
         }
         .aboutTextLeftRight{
             display: flex;
             flex-direction: column;
             gap: 1em;
+             padding: 3%;
+            /* border: 2px solid rgb(121, 42, 24);  */
         }
         .aboutTextLeft{
             width: 100%;
             height: fit-content;
             font-size: 19px;
-            text-align: justify;
+            /* text-align: justify; */
         }
         .aboutTextRight{
             width: 100%;
             height: fit-content;
             font-size: 19px;
-            text-align: justify;
+            /* text-align: justify; */
         }
         
         
         /* aboutOutro */
         .aboutOutro{
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
             margin-top: 1em;
             width: 100%;
             height: fit-content;
               display: flex;
               text-align: justify;
+
+              /* border: 2px solid rgb(121, 42, 24);  */
+            padding: 3%;
         }
         .aboutOutroLeftRight{
             width: 100%;
@@ -1013,6 +1048,8 @@ align-items: center;
               align-items: center;        
         }
         .aboutOutroLeft{
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
           display: flex;
           flex-direction: column;
           height: fit-content;
@@ -1021,11 +1058,11 @@ align-items: center;
           /* min-height:450px ; */
           padding: 2%;
           /* margin-top: 2em; */
-          font-size: 19px;
+          font-size: 18px;
           text-align: left;
           background-color: rgba(129, 31, 9, 0.6);
           color: #fff;
-          font-weight: bold;
+          /* font-weight: bold; */
           list-style: ;
           gap: 7px;
         }
@@ -1273,6 +1310,8 @@ gap: 3em;
 /* MOBILE RESP FOR SPEAKERS */
 @media only screen and (max-width:650px){
     .speaker{
+        font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
         height: fit-content;
         width: 100%;
         background: rgb(15,0,0);
@@ -1285,6 +1324,7 @@ gap: 3em;
     }
     .speaker h2{
         font-size: 30px;
+        padding: 0 5%;
     }
     .speakerContent{
         height: fit-content;
@@ -1359,6 +1399,8 @@ gap: 3em;
         background-image: url(./images/spill4.jpg);
     }
     .cardButtom{
+        font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
         height: 25%;
         width: 100%;
         display: flex;
@@ -1483,6 +1525,8 @@ gap: 3em;
 
 /* AGENDA STARTS HERE  */
 .agenda{
+    font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
     width: 100%;
     height: fit-content;
     background-color: #fff;
@@ -1492,14 +1536,16 @@ gap: 3em;
     
     }
     .agendaContent{
+        border: 2px solid rgb(208,67,37);
         width: 90%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: justify;
-        padding: 3em 0;
+        text-align: center;
+        /* padding: 3em 0; */
+        padding: 4%;
         gap: 1em;
     }
     .agenda h2{
@@ -1518,6 +1564,8 @@ gap: 3em;
         
     }
     .details{
+        display: flex;
+        flex-direction: column;
         /* display: flex;
         flex-direction: column;
        justify-content: left;
@@ -1530,7 +1578,7 @@ gap: 3em;
         
     }
     .outro{
-        /* display: flex; */
+        
 
     }
     .outro h3{
@@ -1539,10 +1587,7 @@ gap: 3em;
         align-self: center;
         
     }
-    .speakerr{
-        /* display: flex; */
-        
-    }
+
 
     /* MOBILE RESP AGENDA  */
     /* @media only screen and (min-width: 650px){
@@ -1593,9 +1638,10 @@ gap: 3em;
             align-items: center;
             height: fit-content;
             width: 100%;
-            /* background-color: #f7eeee; */
+            background-color: #fdfdfd;
             gap: 2em;
             padding: 2em 0;
+            margin-top: 2em;
         }
         .sponsosorsContent{
             display: flex;
@@ -1712,6 +1758,8 @@ gap: 3em;
 /* FOOTER MOBILE  */
     @media only screen and (max-width:650px){
         .footer{
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
             width: 100%;
             height: fit-content;
             background-color: rgb(238, 213, 208);
