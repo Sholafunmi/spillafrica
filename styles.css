@@ -978,28 +978,31 @@ align-items: center;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: ;
             padding: 2em 0;
             /* border: 2px solid red; */
         }
         .aboutIntroImg{
             display: flex;
-            width: 85%;
-            height: 15vh;
+            align-items: center;
+
+            justify-content: center;            
+            width: 50%;
+            /* height: 15vh; */
+            height: 20vh;
             position: absolute;
-            left: 0;
-            top: inherit;
+            /* left: 0; */
             background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/spill3.jpg);
             background-position: 80% 20%;
             background-size: cover;
             background-repeat: no-repeat;
-            border-radius: 0 80% 50% 0;
+            /* border-radius: 0 80% 50% 0; */
+            border-radius: 100%;
         }
         .aboutIntroText{
             align-self: center;
             text-align: center;
             color: #fff;
-            font-size: 40px;
+            font-size: 30px;
             font-weight: bold;
             font-family: 'Rajdhani', sans-serif;
             font-weight: 500;
@@ -1135,37 +1138,47 @@ align-items: center;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: ;
             padding: 2em 0;
         }
         .aboutIntroImg{
             display: flex;
             justify-content: center;
-            width: 85%;
-            height: 30vh;
+            /* width: 85%;
+            height: 30vh; */
+            align-items: center;           
+            width: 50%;
+            height: 20vh;
             position: absolute;
-            left: 0;
+            /* left: 0; */
             top: inherit;
             background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/spill3.jpg);
-            background-position: left;
+            background-position: 80% 20%;
             background-size: cover;
             background-repeat: no-repeat;
-            border-radius: 0 80% 50% 0;
+            /* border-radius: 0 80% 50% 0; */
+            border-radius: 50%;
         }
         .aboutIntroText{
             align-self: center;
             color: #fff;
-            font-size: 70px;
+            font-size: 50px;
             font-weight: bold;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
         }
         
         .aboutText{
-            margin-top: 35vh;
+            margin-top: 18vh;
             width: 100%;
             height: fit-content;
             display: flex;
             flex-direction: column;
         }
+        .borderline{
+            /* border: 2px solid #792a18; */
+            width: 100%; 
+            padding: 4%;
+       }
         .top{
             width: 100%;
         }
