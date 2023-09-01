@@ -1239,11 +1239,12 @@ gap: 3em;
     justify-content: center;
     text-align: center;
 }
-.card .onHover:hover{
+/* .card .onHover:hover{
     opacity: 100%;
-}
+} */
 .speaker1, .speaker2, .speaker3, .speaker4, .speaker5, .speaker6, .speaker7{
     box-shadow: 0 5px 10px #fff;
+    
 }
 .cardTop{
     height: 80%;
@@ -1254,26 +1255,26 @@ gap: 3em;
 
 }
 .speaker1 .cardTop{
-    background-image: url(./images/spill1.jpg);
+    background-image: url(./images/silhouett2.jpg);
 }
 .speaker2 .cardTop{
-   background-image:url(./images/pic3RE.png) ;
+    background-image: url(./images/silhouett2.jpg);
 }
 .speaker3 .cardTop{
-    background-image: url(./images/aiony-haust-3TLl_97HNJo-unsplash.jpg);
+    background-image: url(./images/silhouett2.jpg);
 }
 .speaker4 .cardTop{
-    background-image: url(./images/newPic2.jpg);
+    background-image: url(./images/silhouett2.jpg);
 }
 /* second rwo speaker card  */
 .speaker5 .cardTop{
-    background-image: url(./images/spill3.jpg);
+    background-image: url(./images/silhouett2.jpg);
 }
 .speaker6 .cardTop{
-    background-image: url(./images/spill2.jpg);
+    background-image: url(./images/silhouett2.jpg);
 }
 .speaker7 .cardTop{
-    background-image: url(./images/spill4.jpg);
+    background-image: url(./images/silhouett2.jpg);
 }
 .cardButtom{
     height: 20%;
@@ -1283,6 +1284,7 @@ gap: 3em;
     justify-content: center;
     text-align: center;
     padding:  auto;
+    background-color: rgb(233, 213, 186);
 
 }
 .cardButtom p{
@@ -1359,28 +1361,7 @@ gap: 3em;
         background-repeat: no-repeat;
     
     }
-    .speaker1 .cardTop{
-        background-image: url(./images/spill1.jpg);
-    }
-    .speaker2 .cardTop{
-       background-image:url(./images/pic3RE.png) ;
-    }
-    .speaker3 .cardTop{
-        background-image: url(./images/aiony-haust-3TLl_97HNJo-unsplash.jpg);
-    }
-    .speaker4 .cardTop{
-        background-image: url(./images/newPic2.jpg);
-    }
-    /* second rwo speaker card  */
-    .speaker5 .cardTop{
-        background-image: url(./images/spill3.jpg);
-    }
-    .speaker6 .cardTop{
-        background-image: url(./images/spill2.jpg);
-    }
-    .speaker7 .cardTop{
-        background-image: url(./images/spill4.jpg);
-    }
+   
     .cardButtom{
         font-family: 'Rajdhani', sans-serif;
             font-weight: 600;
@@ -1465,28 +1446,7 @@ gap: 3em;
         background-repeat: no-repeat;
     
     }
-    .speaker1 .cardTop{
-        background-image: url(./images/spill1.jpg);
-    }
-    .speaker2 .cardTop{
-       background-image:url(./images/pic3RE.png) ;
-    }
-    .speaker3 .cardTop{
-        background-image: url(./images/aiony-haust-3TLl_97HNJo-unsplash.jpg);
-    }
-    .speaker4 .cardTop{
-        background-image: url(./images/newPic2.jpg);
-    }
-    /* second rwo speaker card  */
-    .speaker5 .cardTop{
-        background-image: url(./images/spill3.jpg);
-    }
-    .speaker6 .cardTop{
-        background-image: url(./images/spill2.jpg);
-    }
-    .speaker7 .cardTop{
-        background-image: url(./images/spill4.jpg);
-    }
+
     .cardButtom{
         height: 25%;
         width: 100%;
