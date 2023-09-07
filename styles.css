@@ -13,7 +13,7 @@
 height: 100vh;
 width: 100%;
 justify-content: center;
-background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('./images/bg4.jpg');
+background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('/bg4.jpg');
 /* background-position: ; */
 background-position-x: center;
 background-position-y: 40%;
@@ -247,7 +247,7 @@ nav{
     height: 90vh;
     width: 100%;
     justify-content: center;
-    background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('./images/bg4.jpg');
+    background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('/bg4.jpg');
     background-position:center;
     background-repeat: no-repeat;
     background-size: 120% 100%;
@@ -517,7 +517,7 @@ color: #fff;
     height: fit-content;
     width: 100%;
     justify-content: center;
-    background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('./images/bg4.jpg');
+    background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('/bg4.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -817,7 +817,7 @@ align-items: center;
     position: absolute;
     left: ;
     top: inherit;
-    background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/bg3.jpg);
+    background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(/bg3.jpg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -896,7 +896,7 @@ align-items: center;
 .aboutOutroRight{
   height: 310px;
   width:350px;
-  background: url(./images/bg2.jpg);
+  background: url(/bg2.jpg);
   border-radius: 0 0 50% 0;
   background-position: center;
   background-size: cover;
@@ -941,7 +941,7 @@ align-items: center;
             width: 50%;
             height: 20vh;
             position: absolute;
-            background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/bg3.jpg);
+            background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(/bg3.jpg);
             background-position: 80% 20%;
             background-size: cover;
             background-repeat: no-repeat;
@@ -1085,7 +1085,7 @@ align-items: center;
             position: absolute;
             /* left: 0; */
             top: inherit;
-            background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/bg3.jpg);
+            background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(/bg3.jpg);
             background-position: 80% 20%;
             background-size: cover;
             background-repeat: no-repeat;
@@ -1165,7 +1165,7 @@ align-items: center;
         .aboutOutroRight{
           height: 300px;
           width:350px;
-          background: url(./images/bg2.jpg);
+          background: url(/bg2.jpg);
           border-radius: 0 0 50% 0;
           background-position: center;
           background-size: cover;
@@ -1259,26 +1259,26 @@ gap: 3em;
 
 }
 .speaker1 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(/silhouett2.jpg);
 }
 .speaker2 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(/silhouett2.jpg);
 }
 .speaker3 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(/silhouett2.jpg);
 }
 .speaker4 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(/silhouett2.jpg);
 }
 /* second rwo speaker card  */
 .speaker5 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(/silhouett2.jpg);
 }
 .speaker6 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(/silhouett2.jpg);
 }
 .speaker7 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(/silhouett2.jpg);
 }
 .cardButtom{
     height: 20%;
