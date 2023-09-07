@@ -13,8 +13,10 @@
 height: 100vh;
 width: 100%;
 justify-content: center;
-background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('./images/ladies2.jpg');
-background-position: center;
+background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('./images/bg4.jpg');
+/* background-position: ; */
+background-position-x: center;
+background-position-y: 40%;
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -39,6 +41,7 @@ nav{
     padding: 0 5%;
     height: 12vh;
     background-color: #ffffff;
+    border-bottom: 1px solid rgb(219, 147, 131);
 }
 .logo{
     width: 80px;
@@ -244,10 +247,11 @@ nav{
     height: 100vh;
     width: 100%;
     justify-content: center;
-    background: linear-gradient(rgba(167, 161, 161, 0.2), rgba(145,1,0, 0.2)), url('./images/ladies2.jpg');
-    background-position: center;
+    background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('./images/bg4.jpg');
+    background-position:center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 120% 100%;
+    overflow-x: hidden;
     }
     .headerContent{
         display: flex;
@@ -270,7 +274,7 @@ nav{
         padding: 0 5%;
         height: 10vh;
         background-color: #fff;
-        border-bottom: 0.1px solid rgb(219, 147, 131);
+        border-bottom: 0.5px solid rgb(219, 147, 131);
     }
     .logo{
         width: 60px;
@@ -513,7 +517,7 @@ color: #fff;
     height: fit-content;
     width: 100%;
     justify-content: center;
-    background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('./images/ladies2.jpg');
+    background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('./images/bg4.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -813,7 +817,7 @@ align-items: center;
     position: absolute;
     left: ;
     top: inherit;
-    background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/spill3.jpg);
+    background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/bg3.jpg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -890,9 +894,9 @@ align-items: center;
   color: #fff;
 }
 .aboutOutroRight{
-  height: 300px;
+  height: 310px;
   width:350px;
-  background: url(./images/spill1.jpg);
+  background: url(./images/bg2.jpg);
   border-radius: 0 0 50% 0;
   background-position: center;
   background-size: cover;
@@ -937,7 +941,7 @@ align-items: center;
             width: 50%;
             height: 20vh;
             position: absolute;
-            background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/spill3.jpg);
+            background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/bg3.jpg);
             background-position: 80% 20%;
             background-size: cover;
             background-repeat: no-repeat;
@@ -1042,7 +1046,7 @@ align-items: center;
           align-items: center;
           height: 160px;
           width: 100%;
-          background: url(./images/spill1.jpg);
+          background: url(./images/bg2.jpg);
           border-radius:50% 50% 0;
           background-position: 40% 60%;
           background-size: cover;
@@ -1081,7 +1085,7 @@ align-items: center;
             position: absolute;
             /* left: 0; */
             top: inherit;
-            background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/spill3.jpg);
+            background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 49, 25, 0.5)), url(./images/bg3.jpg);
             background-position: 80% 20%;
             background-size: cover;
             background-repeat: no-repeat;
@@ -1161,7 +1165,7 @@ align-items: center;
         .aboutOutroRight{
           height: 300px;
           width:350px;
-          background: url(./images/spill1.jpg);
+          background: url(./images/bg2.jpg);
           border-radius: 0 0 50% 0;
           background-position: center;
           background-size: cover;
