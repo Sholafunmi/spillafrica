@@ -244,7 +244,7 @@ nav{
  
     .header{
         display: flex;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     justify-content: center;
     background: linear-gradient(rgba(15,0,0, 0.5), rgba(145,1,0, 0.5)), url('./images/bg4.jpg');
@@ -369,7 +369,7 @@ color: #fff;
         /* added 10vh marging-top bcos of fixed nav bar  */
         margin-top: 10vh;
         width: 90%;
-        height: 73vh;
+        height: 63vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
