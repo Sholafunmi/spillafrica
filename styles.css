@@ -106,6 +106,27 @@ nav{
 
 }
 
+/* Animation for the hero content */
+
+.hero.fade-in {
+    opacity: 1;
+    animation: fadeIn 2s ease-in-out; /* Define the fade-in animation */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Optionally, you can add a slight vertical animation */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 
 .heroLeft{
     height: 100%;
@@ -376,6 +397,26 @@ color: #fff;
         align-items: center;
     
     }
+
+    /* Animation for the hero content */
+
+.hero.fade-in {
+    opacity: 1;
+    animation: fadeIn 2s ease-in-out; /* Define the fade-in animation */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Optionally, you can add a slight vertical animation */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
     
     .heroLeft{
         font-family: 'Rajdhani', sans-serif;
@@ -637,6 +678,25 @@ color: #fff;
         align-items: center;
     
     }
+
+    /* Animation for the hero content */
+
+.hero.fade-in {
+    opacity: 1;
+    animation: fadeIn 2s ease-in-out; /* Define the fade-in animation */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Optionally, you can add a slight vertical animation */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
     .heroLeft{
        
@@ -1209,7 +1269,28 @@ align-items: center;
     padding: 3em 0;
     color: #fff;
     gap: 2em;
+    opacity: 0;
 }
+
+/* Animation for the speaker section */
+.speakerContent.fade-in {
+    opacity: 1;
+    animation: fadeIn 1.5s ease-in-out; /* Define the fade-in animation */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Optionally, you can add a slight vertical animation */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 .speakerCard{
     width: 100%;
 display: flex;
@@ -1244,9 +1325,13 @@ gap: 3em;
     justify-content: center;
     text-align: center;
 }
-/* .card .onHover:hover{
+.card .onHover:hover{
     opacity: 100%;
-} */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .speaker1, .speaker2, .speaker3, .speaker4, .speaker5, .speaker6, .speaker7{
     box-shadow: 0 5px 10px #fff;
     
@@ -1254,32 +1339,33 @@ gap: 3em;
 .cardTop{
     height: 80%;
     width: 100%;
-    background-position: center;
+    /* background-position: center; */
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 .speaker1 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(./images/Morenike.jpg);
 }
 .speaker2 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(./images/Ronke.jpg);
 }
 .speaker3 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(./images/Taiwo.jpg);
 }
 .speaker4 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(./images/yetunde.jpg);
 }
 /* second rwo speaker card  */
 .speaker5 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(./images/Fadekemi.jpg);
 }
 .speaker6 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(./images/Oluwatowun.png);
 }
 .speaker7 .cardTop{
-    background-image: url(./images/silhouett2.jpg);
+    background-image: url(./images/Kaffy.jpg);
 }
 .cardButtom{
     height: 20%;
@@ -1361,7 +1447,7 @@ gap: 3em;
     .cardTop{
         height: 75%;
         width: 100%;
-        background-position: center;
+        background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
     
@@ -1446,7 +1532,7 @@ gap: 3em;
     .cardTop{
         height: 75%;
         width: 100%;
-        background-position: center;
+        background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
     
@@ -1754,4 +1840,47 @@ gap: 3em;
                    color: rgb(204, 156, 145);
                    font-size: 21px;
                }
+    }
+
+    .programAgenda{
+       width: 100%;
+       height: fit-content;
+       padding: 0 5%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       
+    }
+    logo{
+        margin-top: 1em;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .programe{
+        
+        width: 100%; 
+        height: fit-content; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;  
+        font-size: 23px;
+        text-align: center;
+
+    }
+    .programe h1{
+        font-size: 25px;
+    }
+    .programe h2{
+        font-size: 25px;
+    }
+    .programe p{
+        margin-top: 1em;
+        border: 2px solid rgb(158, 54, 30);
+        padding: 5%;
     }

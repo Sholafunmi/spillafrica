@@ -48,3 +48,41 @@ setInterval(updateCountdown, 1000);
 // Initial update when the page loads
 updateCountdown();
 
+
+
+// hero section animation 
+document.addEventListener('DOMContentLoaded', function () {
+    const hero = document.querySelector('.hero');
+    hero.classList.add('fade-in');
+});
+
+
+// speaker content animation 
+// Select the section
+const aboutSection = document.querySelector('#speakerContent');
+
+// Options for the Intersection Observer
+const options = {
+    root: null, // Use the viewport as the root
+    rootMargin: '0px', // No margin
+    threshold: 0.2, // Trigger when 20% of the element is visible
+};
+
+// Callback function when the intersection occurs
+function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            // Add the "fade-in" class to the about section
+            aboutSection.classList.add('fade-in');
+
+            // Stop observing once the animation has occurred
+            observer.unobserve(entry.target);
+        }
+    });
+}
+
+// Create the Intersection Observer
+const observer = new IntersectionObserver(handleIntersection, options);
+
+// Start observing the about section
+observer.observe(aboutSection);
