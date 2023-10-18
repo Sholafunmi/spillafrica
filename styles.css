@@ -1842,15 +1842,40 @@ gap: 3em;
                }
     }
 
-    .programAgenda{
+
+    /* Agenda page */
+    .progAgenda{
        width: 100%;
-       height: fit-content;
-       padding: 0 5%;
+       height: 100vh;
        display: flex;
        flex-direction: column;
        justify-content: center;
-       align-items: center;
+       text-align: ;
        
+       align-items: center;
+       gap: 2em;
+       padding: 0 10%;
+    }
+    .progAgenda h3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    .progAgenda .download{
+        text-decoration: none;
+        background: rgb(158, 54, 30);
+        color: #fff;    
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 15px;
+        margin-bottom: 10em;
+    }
+    .progAgenda .download:hover{
+        color: rgb(158, 54, 30);
+        background-color: #fff;
+        border: 2px solid rgb(158, 54, 30);
     }
     logo{
         margin-top: 1em;
@@ -1861,7 +1886,7 @@ gap: 3em;
         justify-items: center;
         text-align: center;
     }
-    .programe{
+    /* .programe{
         
         width: 100%; 
         height: fit-content; 
@@ -1883,4 +1908,4 @@ gap: 3em;
         margin-top: 1em;
         border: 2px solid rgb(158, 54, 30);
         padding: 5%;
-    }
+    } */
