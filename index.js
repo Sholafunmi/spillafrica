@@ -25,7 +25,7 @@ sideMenuItems.addEventListener("click", function(){
 
 
 // Replace the target date with the date of SPILL event
-const targetDate = new Date('2023-10-21T23:59:59').getTime();
+const targetDate = new Date('2024-06-29T23:59:59').getTime();
 // const targetDate = new Date('2023-12-31T23:59:59').getTime();
 function updateCountdown() {
     const now = new Date().getTime();
@@ -86,3 +86,14 @@ const observer = new IntersectionObserver(handleIntersection, options);
 
 // Start observing the about section
 observer.observe(aboutSection);
+
+
+
+// update date yearly 
+// scripts.js
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+    // Find the element with the id "current-year" and set its text content to the current year
+    document.getElementById("current-year").textContent = currentYear;
+});
