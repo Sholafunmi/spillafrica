@@ -200,7 +200,9 @@ nav{
 .headerBottom{
     background: rgb(14, 1, 1);
     display: flex;
+    flex-direction: column;
     height: 15vh;
+    color: #f7eeee;
     width: 100%;
 
 }
@@ -253,6 +255,10 @@ nav{
 
 .label {
     font-size: 16px;
+}
+.time{
+    font-size: 25px;
+    font-weight: bold;
 }
 
 }
@@ -548,6 +554,10 @@ color: #fff;
     
     .label {
         font-size: 12px;
+    }
+    .time{
+        font-size: 18px;
+        font-weight: bold;
     }
 }
 /* TABLETS AND IPADS HEADER SECTION  */
@@ -1346,26 +1356,26 @@ gap: 3em;
 
 }
 .speaker1 .cardTop{
-    background-image: url(./images/Morenike.jpg);
+    /* background-image: url(./images/Morenike.jpg); */
 }
 .speaker2 .cardTop{
-    background-image: url(./images/Ronke.jpg);
+    /* background-image: url(./images/Ronke.jpg); */
 }
 .speaker3 .cardTop{
-    background-image: url(./images/Taiwo.jpg);
+    /* background-image: url(./images/Taiwo.jpg); */
 }
 .speaker4 .cardTop{
-    background-image: url(./images/yetunde.jpg);
+    /* background-image: url(./images/yetunde.jpg); */
 }
 /* second rwo speaker card  */
 .speaker5 .cardTop{
-    background-image: url(./images/Fadekemi.jpg);
+    /* background-image: url(./images/Fadekemi.jpg); */
 }
 .speaker6 .cardTop{
-    background-image: url(./images/Oluwatowun.png);
+    /* background-image: url(./images/Oluwatowun.png); */
 }
 .speaker7 .cardTop{
-    background-image: url(./images/Kaffy.jpg);
+    /* background-image: url(./images/Kaffy.jpg); */
 }
 .cardButtom{
     height: 20%;
@@ -1559,7 +1569,7 @@ gap: 3em;
 /* AGENDA STARTS HERE  */
 .agenda{
     font-family: 'Rajdhani', sans-serif;
-            font-weight: 500;
+    font-weight: 500;
     width: 100%;
     height: fit-content;
     background-color: #fff;
@@ -1590,15 +1600,13 @@ gap: 3em;
     }
 
     .features{
-        text-align: left;
+        text-align: justify;
     }
-    .features h3{
-        
-        
-    }
+
     .details{
         display: flex;
         flex-direction: column;
+      
     }
 
     .outro h3{
