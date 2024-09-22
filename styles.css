@@ -1357,26 +1357,26 @@ gap: 3em;
 
 }
 .speaker1 .cardTop{
-    background-image: url(./images/DayoBenjamin.jpg);
+    background-image: url(./images/IFEDAYODUROSIMI.jpg);
 }
 .speaker2 .cardTop{
-    background-image: url(./images/NaomiOsemedua.jpg);
+    background-image: url(./images/MAYOWAADEOTI.jpg);
 }
 .speaker3 .cardTop{
-    background-image: url(./images/DianeOkoko.jpg);
+    background-image: url(./images/DELETEJUOSHO.jpg);
 }
 .speaker4 .cardTop{
-    background-image: url(./images/HansatuAdegbite.jpg);
+    background-image: url(./images/OYINKANAKINTOLA.jpg);
 }
 /* second rwo speaker card  */
 .speaker5 .cardTop{
-    background-image: url(./images/SotonyeEhimiaghe.jpg);
+    background-image: url(./images/ATIM.jpg);
 }
 .speaker6 .cardTop{
-    background-image: url(./images/AdaoraSydney.jpg);
+    background-image: url(./images/);
 }
 .speaker7 .cardTop{
-    background-image: url(./images/SarahAdekunle.jpg);
+    background-image: url(./images/);
 }
 .cardButtom{
     height: 20%;
@@ -1918,3 +1918,68 @@ gap: 3em;
         border: 2px solid rgb(158, 54, 30);
         padding: 5%;
     } */
+
+
+
+
+
+    /* temporary */
+    .temporary{
+        width: 100%;
+        height: 90vh;
+       background-image: url(./images/SPILLLAGOS2024.png);
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+    }
+
+    @media only screen and (max-width:650px){
+        .temporary{
+            width: 100%;
+            height: 90vh;
+            background-image: url(./images/SPILLLAGOS2024.png);
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            overflow-x: hidden;
+        }
+    }
+
+    @media only screen and (max-width:900px){
+        .temporary{
+            width: 100%;
+            height: 90vh;
+            background-image: url(./images/SPILLLAGOS2024.png);
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            overflow-x: hidden;
+        }
+    }
+    .regnew{
+        width: fit-content;
+        height: 6vh;
+      
+   font-family: 'Rajdhani', sans-serif;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #fff;
+        border: 5px solid rgb(145,1,0);
+        color:rgb(208,67,37);
+        padding: 8px 12px;
+        border-radius: 15px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+   
+    
+    .Regnew:hover{
+        color:#FFF ;
+        background: rgb(208,67,37);
+        border: 5px solid #fff;
+        font-size: 21px;
+    }

@@ -25,7 +25,7 @@ sideMenuItems.addEventListener("click", function(){
 
 
 // Replace the target date with the date of SPILL event
-const targetDate = new Date('2024-06-29T23:59:59').getTime();
+const targetDate = new Date('2024-10-26T23:59:59').getTime();
 // const targetDate = new Date('2023-12-31T23:59:59').getTime();
 function updateCountdown() {
     const now = new Date().getTime();
